@@ -1,0 +1,4 @@
+
+const confirmarCadastro = () => {
+    alert('feito')
+}
