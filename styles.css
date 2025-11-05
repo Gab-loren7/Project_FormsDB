@@ -20,6 +20,7 @@ body {
 .container {
     margin: auto;
     display: block;
+    position: relative;
     text-align: center;
     align-content: center;
     justify-content: center;
@@ -29,11 +30,16 @@ body {
     /* border: 3px solid red; */
 }
 
+.group-input {
+    position: relative;
+    display: block;
+}
+
 input {
     margin: 25px 0px;
     width: 100%;
     min-width: 200px;
-    height: 40px;
+    height: 45px;
     padding: 15px;
 
     background-color: transparent;
@@ -42,9 +48,26 @@ input {
     border: 2px solid #f1f1f1;
     border-radius: 10px;
     outline: 0;
-} input::placeholder{
-    color: #f1f1f1; 
-} 
+}
+
+label {
+    position: absolute;
+    pointer-events: none;
+    top: 40px;
+    left: 10px;
+    font-size: 14px;
+    padding: 0px 5px;
+    background-color: #1f1f1f;
+    color: #f1f1f1;
+    transition: ease-in-out .3s;
+
+}
+
+input:focus + label,
+input:valid + label,
+input:not(:placeholder-shown) + label {
+    top: 16px;
+}
 
 .btn {
     cursor: pointer;
@@ -55,7 +78,7 @@ input {
 
     border-radius: 10px;
     border: transparent;
-    
+
     font-size: 16px;
     font-weight: 600;
 }

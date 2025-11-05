@@ -1,4 +1,9 @@
+function confirmarCadastro() {
+    let getNome = document.getElementById("Nome").value
+    let getEmail = document.getElementById("Email").value
+    let getSenha = document.getElementById("Senha").value
 
-const confirmarCadastro = () => {
-    alert('feito')
+    if (getNome,getEmail,getSenha ==! ' ') {
+        alert("Complete todas as informações!")
+    }
 }

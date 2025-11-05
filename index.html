@@ -11,13 +11,22 @@
 
 <body>
     <div class="container">
-        <!-- input Nome -->
-        <input type="text" id="Nome" placeholder="Nome">
-        <!-- input Email -->
-        <input type="email" id="Email" placeholder="Email">
-        <!-- input Senha -->
-        <input type="password" id="Senha" placeholder="Senha">
-
+        <div class="group-input">
+            <!-- input Nome -->
+            <input type="text" id="Nome" placeholder=" " required>
+            <label>Nome</label>
+        </div>  
+        <div class="group-input">
+            <!-- input Email -->
+            <input type="email" id="Email" class="email" placeholder=" " required>
+            <label>Email</label>
+        </div>
+        <div class="group-input">
+            <!-- input Senha -->
+            <input type="password" id="Senha" placeholder=" " required>
+            <label>Senha</label>
+        </div>
+    
         <button class="btn" onclick="confirmarCadastro()">Enviar</button>
     </div>
 </body>
